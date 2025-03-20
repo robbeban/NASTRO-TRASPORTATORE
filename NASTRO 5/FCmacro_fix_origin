@@ -1,0 +1,5 @@
+sel = Gui.Selection.getSelection()
+origin = App.ActiveDocument.addObject('App::Origin', 'Origin')
+App.ActiveDocument.getObject(sel[0].Name).Origin = origin #object Part selected in ComboView
+App.activeDocument().recompute(None,True,True)
+
